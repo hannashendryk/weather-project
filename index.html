@@ -3,15 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="src/weather_project.css"/>
+
+    <script src="https://kit.fontawesome.com/cdc51d9313.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700;800&family=Indie+Flower&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+<div class="container">
+    
     <h1>
-        Hello Git
+        Weather
     </h1>
-    <script src="script.js"></script>
+
+    <form id="city">
+      <input type="text" class="box" placeholder="Enter the city" id="search-city"/>
+      <input type="submit" class="button" value="Search"/>
+      <input type="submit" class="button" id="current-geolocation" value="Current"/>
+    </form>
+
+    <div class="row">
+      <div class="col-6" id="change-city">CITY</div>
+      <div class="col-6"><span id="temperature"></span> <a href="#" class="celsium">°C</a>|<a href="#" class="fahrenheit">°F</a></div>
+      <div class ="date" id="date"></div>
+      
+      <div class="col-4 day">Today</div>
+      <div class="col-4 temperature">12°C | 53°</div>
+      <div class="col-4"><i class="fa-solid fa-sun"></i></div>
+    
+      <div class="col-4 day" >Friday</div>
+      <div class="col-4 temperature">11°C  | 52°F</div>
+      <div class="col-4"><i class="fa-solid fa-cloud"></i></div>
+
+      <div class="col-4 day">Saturday</div>
+      <div class="col-4 temperature">18°C | 64°F</div>
+      <div class="col-4"><i class="fa-solid fa-cloud-bolt"></i></div>
+
+      <div class="col-4 day">Sunday</div>
+      <div class="col-4 temperature">23°C |73°F</div>
+      <div class="col-4"><i class="fa-solid fa-cloud-meatball"></i></div>
+
+      <div class="col-4 day">Monday</div>
+      <div class="col-4 temperature">19°C | 66°F</div>
+      <div class="col-4"><i class="fa-solid fa-cloud-rain"></i></div>
+
+      <div class="col-4 day">Tuesday</div>
+      <div class="col-4 temperature">21°C | 70°F</div>
+      <div class="col-4"><i class="fa-solid fa-sun"></i></div>
+
+      <div class="col-4 day">Wednesday</div>
+      <div class="col-4 temperature">16°C | 60°F</div>
+      <div class="col-4"><i class="fa-solid fa-snowflake"></i></div>
+    </div>
+
+</div>
+
+<script src="src/weather_project.js"></script>
 </body>
 </html>

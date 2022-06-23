@@ -1,0 +1,92 @@
+body {
+    font-family: 'Baloo Tammudu 2', cursive;
+    background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);;
+    
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 100px;
+    font-weight: bold;
+    color: #827497;
+    text-shadow: 1px 1px 2px black;
+}
+
+.date {
+    font-size: larger;
+}
+
+.box {
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 2px #FFF2F2;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: larger;
+    
+}
+
+.button {
+    box-shadow: 1px 1px 2px #FFF2F2;
+    border-radius: 5px;
+    border-color: #827497;
+    color: #827497;
+    font-size: larger;
+    transition: all 200ms ease-in-out;
+    box-sizing: 100px 30px;
+}
+
+.button:hover {
+    background: #827497;
+    color: beige;
+    cursor: pointer;
+}
+
+
+
+.col-6, .celsium, .fahrenheit {
+    font-size: 100px;
+    color: #646FD4;
+}
+
+.col-4.day {
+    font-size: 40px;
+    color: #4D4C7D;
+}
+
+.col-4.temperature {
+    font-size: 40px;
+    color: #4D4C7D;
+}
+
+.col-4:hover {
+    font-size: 45px;
+    font-weight: solid;
+}
+
+.fa-solid {
+    font-size: 40px;
+}
+
+.fa-sun {
+   color: #EFD345;
+}
+
+.fa-cloud  {
+    color: #646FD4;
+}
+
+.fa-cloud-bolt {
+    color: #16003B;
+}
+
+.fa-cloud-meatball {
+    color: #92B4EC;
+}
+
+.fa-cloud-rain {
+    color: #646FD4;
+}
+
+.fa-snowflake {
+    color: #FDF6EC;
+}
